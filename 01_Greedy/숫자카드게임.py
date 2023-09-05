@@ -1,3 +1,17 @@
+# n, m get input separated by space
+n, m = map(int, input().split())
+
+result = 0
+for i in range(n):
+    data = list(map(int, input().split()))
+
+    # smallest in the row
+    min_value = min(data)
+    # biggest in the columns
+    result = max(result, min_value)
+    
+print(result)
+
 # # N: 행, M: 열
 # N, M = map(int, input().split())
 
@@ -15,16 +29,3 @@
 #         print("y=%d, max=%d" %(y, max))
 
 # print(max)
-
-# n, m get input separated by space
-n, m = map(int, input().split())
-
-result = 0
-for i in range(n):
-    data = list(map(int, input().split()))
-
-    # smallest in the row
-    min_value = min(data)
-    # biggest in the columns
-    result = max(result, min_value)
-print(result)
