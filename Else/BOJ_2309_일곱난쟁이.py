@@ -18,4 +18,4 @@ array.remove(false2)
 array.sort()
 
 for i in array:
-    print(array[i])
+    print(i)
