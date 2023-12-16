@@ -8,9 +8,9 @@ for _ in range(9):
 
 for i in range(9):
     for j in range(i+1, 9):
-        if sum(array) - (array[i]+array[j]) == 100:
+        if (sum(array) - (array[i]+array[j]) == 100):
             false1 = array[i]
-            false2 = array[2]
+            false2 = array[j]
 
 array.remove(false1)
 array.remove(false2)
