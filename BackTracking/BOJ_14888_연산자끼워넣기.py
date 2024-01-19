@@ -16,17 +16,17 @@ def backtracking(idx, result, plus, minus, mul, div):
         min_result = min(min_result, result)
         return
     
-    if plus:
+    if plus>0:
         backtracking(idx+1, result + a[idx], plus-1, minus, mul, div)
-    if minus:
+    if minus>0:
         backtracking(idx+1, result - a[idx], plus, minus-1, mul, div)
-    if mul:
+    if mul>0:
         backtracking(idx+1, result * a[idx], plus, minus, mul-1, div)
-    if div:
+    if div>0:
         if result < 0:
-            backtracking(idx+1, -(result//a[idx]), plus, minus, mul, div-1)
+            backtracking(idx+1, -((-result)//a[idx]), plus, minus, mul, div-1)
         else:
-            backtracking(idx+1, result // a[idx], plus, minus, mul, div-1)
+            backtracking(idx+1, result//a[idx], plus, minus, mul, div-1)
 
 backtracking(1, a[0], plus, minus, mul, div)
 
