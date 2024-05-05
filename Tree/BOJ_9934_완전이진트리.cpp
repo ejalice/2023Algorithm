@@ -1,6 +1,6 @@
 // BOJ 9934번
 // 완전 이진 트리
-// Silver 2
+// Silver 1
 
 #include <iostream>
 #include <vector>
