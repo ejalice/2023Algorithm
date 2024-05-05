@@ -1,5 +1,5 @@
 // BOJ 9372번
-// 상근이의 여행
+// 상근이의 여행 _ Kruskal
 // Silver 4
 
 #include <iostream>
